@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#133357));
+  background: linear-gradient(90deg, black 0%, #133357 100%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.main-wrapper .refer {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.main-wrapper .refer img {
+  width: 100%;
+}
+
+.main-wrapper header .container {
+  width: 100%;
+}
+
+.main-wrapper header .timer {
+  text-align: center;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#133357));
+  background: linear-gradient(90deg, black 0%, #133357 100%);
+}
+
+.main-wrapper header .timer p {
+  color: #fff;
+  font-size: 17px;
+  padding: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.main-wrapper header .timer p strong {
+  font-weight: 500;
+}
+
+.main-wrapper header nav {
+  width: 1140px;
+  margin: auto;
+}
+
+.main-wrapper header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 25px 0;
+}
+
+.main-wrapper header nav ul li {
+  list-style: none;
+  margin-right: 55px;
+}
+
+.main-wrapper header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.main-wrapper header nav ul li a {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #133357;
+}
+
+.main-wrapper .hero-main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .hero-main .container .hero-image {
+  width: 50%;
+  padding: 55px 70px;
+  padding-left: 90px;
+  padding-bottom: 45px;
+}
+
+.main-wrapper .hero-main .container .hero-image img {
+  width: 100%;
+}
+
+.main-wrapper .hero-main .container .hero-content {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.main-wrapper .hero-main .container .hero-content .heading {
+  margin-bottom: 20px;
+}
+
+.main-wrapper .hero-main .container .hero-content .heading h1 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.main-wrapper .hero-main .container .hero-content .text {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .hero-main .container .hero-content .text p {
+  font-size: 20px;
+}
+
+.main-wrapper .hero-main .container .hero-content .button button {
+  padding: 15px 38px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.main-wrapper .weather-channel .container .heading {
+  padding: 17px 36px;
+  background: #123052;
+}
+
+.main-wrapper .weather-channel .container .heading h2 {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #fff;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single {
+  width: 25%;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single:nth-child(2) {
+  background-color: #0D7E88;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single:nth-child(3) {
+  background-color: #D09378;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single:nth-child(4) {
+  background-color: #405B5D;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single:nth-child(5) {
+  background-color: #74A748;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-name {
+  padding-top: 23px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single .icon img {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-temperature span.temp {
+  font-size: 80px;
+  font-weight: 500;
+  position: relative;
+  color: #fff;
+}
+
+.main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-temperature span.degree {
+  font-size: 80px;
+  font-weight: 500;
+  position: absolute;
+  color: #fff;
+}
+
+.main-wrapper .featured-destinations {
+  padding-top: 47px;
+  padding-bottom: 23px;
+}
+
+.main-wrapper .featured-destinations .container .heading h2 {
+  font-size: 30px;
+}
+
+.main-wrapper .featured-destinations .container .feature-destination-main::-webkit-scrollbar {
+  display: none;
+}
+
+.main-wrapper .featured-destinations .container .feature-destination-main {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.main-wrapper .featured-destinations .container .feature-destination-main .destination-image {
+  height: 210px;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  background-position: center;
+}
+
+.main-wrapper .featured-destinations .container .feature-destination-main .feature-destination-single {
+  width: 225px;
+  padding: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main-wrapper .featured-destinations .container .feature-destination-main .feature-destination-single p {
+  padding: 15px 0;
+}
+
+.main-wrapper .plan-trip {
+  background-image: url("../img/promo-image.png");
+  background-size: cover;
+  height: 558px;
+}
+
+.main-wrapper .plan-trip .heading h2 {
+  font-size: 57px;
+  text-transform: uppercase;
+  padding-top: 351px;
+  padding-left: 6px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.main-wrapper .plan-trip .sub-heading {
+  width: 500px;
+}
+
+.main-wrapper .plan-trip .sub-heading p {
+  font-size: 34px;
+  font-weight: 600;
+  padding: 3px 10px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.main-wrapper .quote {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.main-wrapper .quote .heading h2 {
+  font-size: 31px;
+  text-align: center;
+}
+
+.main-wrapper .quote .form form {
+  width: 515px;
+  margin: auto;
+  text-align: left;
+  padding-top: 42px;
+}
+
+.main-wrapper .quote .form form div {
+  margin-bottom: 18px;
+}
+
+.main-wrapper .quote .form form div label {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.main-wrapper .quote .form form div input {
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+}
+
+.main-wrapper .quote .form form div p.error {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #e53935;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.main-wrapper .quote .form form div p.success {
+  background: #c8e6c9;
+  font-size: 14px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  color: #444444;
+  font-weight: 400;
+}
+
+.main-wrapper .quote .form form div.button {
+  text-align: center;
+}
+
+.main-wrapper .quote .form form div.button button {
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 47px;
+  border-radius: 5px;
+}
+
+.main-wrapper footer {
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#133357));
+  background: linear-gradient(90deg, black 0%, #133357 100%);
+}
+
+.main-wrapper footer .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-wrapper footer .footer .container .footer-content {
+  width: 20%;
+  padding: 50px 10px;
+  padding-right: 0px;
+}
+
+.main-wrapper footer .footer .container .footer-content:last-child {
+  width: 40%;
+}
+
+.main-wrapper footer .footer .container .footer-content:last-child p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.main-wrapper footer .footer .container .footer-content .heading {
+  margin-bottom: 23px;
+}
+
+.main-wrapper footer .footer .container .footer-content .heading h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-wrapper footer .footer .container .footer-content ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.main-wrapper footer .footer .container .footer-content ul li a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

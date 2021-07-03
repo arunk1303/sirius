@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1270px) {
+  .container {
+    width: 100% !important;
+  }
+  .main-wrapper header nav {
+    width: 100%;
+  }
+  .main-wrapper header nav ul li {
+    width: 33.33%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .main-wrapper header nav ul li a {
+    font-size: 15px;
+  }
+  .main-wrapper header .timer {
+    padding: 0 20px;
+  }
+  .main-wrapper header .timer p {
+    font-size: 15px;
+  }
+  .main-wrapper .hero-main {
+    padding-bottom: 50px;
+  }
+  .main-wrapper .hero-main .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-wrapper .hero-main .container .hero-image {
+    width: 100%;
+    padding: 50px;
+  }
+  .main-wrapper .hero-main .container .hero-content {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .main-wrapper .hero-main .container .hero-content .heading h1 {
+    font-size: 30px;
+  }
+  .main-wrapper .hero-main .container .hero-content .text {
+    padding: 10px 25px;
+  }
+  .main-wrapper .weather-channel .container .heading h2 {
+    text-align: center;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main .city-weather-single {
+    width: 50%;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-name {
+    font-size: 16px;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main .city-weather-single .icon img {
+    width: 30px;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-temperature span.temp {
+    font-size: 40px;
+  }
+  .main-wrapper .weather-channel .container .city-weather-main .city-weather-single .city-temperature span.degree {
+    font-size: 40px;
+  }
+  .main-wrapper .featured-destinations .container .heading h2 {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  .main-wrapper .plan-trip {
+    height: 180px;
+  }
+  .main-wrapper .plan-trip .heading h2 {
+    font-size: 20px;
+    padding-top: 90px;
+    padding-left: 20px;
+  }
+  .main-wrapper .plan-trip .sub-heading {
+    width: 100%;
+  }
+  .main-wrapper .plan-trip .sub-heading p {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .main-wrapper .quote {
+    padding: 30px;
+  }
+  .main-wrapper .quote .heading h2 {
+    font-size: 20px;
+  }
+  .main-wrapper .quote .form form {
+    width: 100%;
+  }
+  .main-wrapper .quote .form form div.button button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 47px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+  }
+  .main-wrapper footer .footer .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-wrapper footer .footer .container .footer-content {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .main-wrapper footer .footer .container .footer-content:last-child {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .main-wrapper footer .footer .container .footer-content:last-child p {
+    font-size: 16px;
+  }
+  .main-wrapper footer .footer .container .footer-content ul li a {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@mixin backgroun-gradient{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(19,51,87,1) 100%);
+  }
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+  
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    @include backgroun-gradient();
+    color: #fff;
+    cursor: pointer;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.none{
+    display: none;
+}
+
+.main-wrapper{
+    .refer{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        img{
+            width: 100%;
+        }
+    }
+
+    header{
+        .container{
+            width: 100%;
+        }
+        .timer{
+            text-align: center;
+            @include backgroun-gradient();
+            p{
+                color: #fff;
+                font-size: 17px;
+                padding: 13px;
+                font-weight: 300;
+                line-height: 1.5;
+                strong{
+                    font-weight: 500;
+                }
+            }
+        }
+        nav{
+            width: 1140px;
+            margin: auto;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                padding: 25px 0;
+                li{
+                    list-style: none;
+                    margin-right: 55px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        color: #133357;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-main{
+        .container{
+            display: flex;
+            align-items: center;
+            .hero-image{
+                width: 50%;
+                padding: 55px 70px;
+                padding-left: 90px;
+                padding-bottom: 45px;
+                img{
+                    width: 100%;
+                }
+            }
+            .hero-content{
+                width: 50%;
+                padding-right: 50px;
+                .heading{
+                    margin-bottom: 20px;
+                    h1{
+                        font-size: 50px;
+                        line-height: 1.1;
+                    }
+                }
+                .text{
+                    padding: 10px 0;
+                    margin-bottom: 20px;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                .button{
+                    button{
+                        padding: 15px 38px;
+                        font-weight: 500;
+                        font-size: 15px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .weather-channel{
+        .container{
+            .heading{
+                padding: 17px 36px;
+                background: #123052;
+                h2{
+                    text-transform: uppercase;
+                    font-size: 21px;
+                    color: #fff;
+                }
+            }
+            .city-weather-main{
+                display: flex;
+                .city-weather-single{
+                    &:nth-child(2){
+                        background-color: #0D7E88;
+                    }
+                    &:nth-child(3){
+                        background-color: #D09378;
+                    }
+                    &:nth-child(4){
+                        background-color: #405B5D;
+                    }
+                    &:nth-child(5){
+                        background-color: #74A748;
+                    }
+                    width: 25%;
+                    text-align: center;
+                    padding-bottom: 17px;
+                    .city-name{
+                        padding-top: 23px;
+                        font-size: 20px;
+                        letter-spacing: 0.5px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                    .icon{
+                        img{
+                            width: 50px;
+                            padding-top: 10px;
+                        }
+                    }
+                    .city-temperature{
+                        span.temp{
+                            font-size: 80px;
+                            font-weight: 500;
+                            position: relative;
+                            color: #fff;
+                        }
+                        span.degree{
+                            font-size: 80px;
+                            font-weight: 500;
+                            position: absolute;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .featured-destinations{
+        padding-top: 47px;
+        padding-bottom: 23px;
+        .container{
+            .heading{
+                h2{
+                    font-size: 30px;
+                }
+            }
+            .feature-destination-main::-webkit-scrollbar {
+                display: none;
+            }
+            .feature-destination-main{
+                margin-top: 20px;
+                display: flex;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+                .destination-image{
+                    height: 210px;
+                    background-size: cover;
+                    width: 100%;
+                    border-radius: 10px;
+                    border-bottom-left-radius: 0;
+                    background-position: center;
+                }
+                .feature-destination-single{
+                    width: 225px;
+                    padding: 0 10px;
+                    flex-shrink: 0;
+                    p{
+                        padding: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .plan-trip{
+        background-image: url("../img/promo-image.png");
+        background-size: cover;
+        height: 558px;
+        .heading{
+            h2{
+                font-size: 57px;
+                text-transform: uppercase;
+                padding-top: 351px;
+                padding-left: 6px;
+                letter-spacing: 0.5px;
+                color: #fff;
+            }
+        }
+        .sub-heading{
+            width: 500px;
+            p{
+                font-size: 34px;
+                font-weight: 600;
+                padding: 3px 10px;
+                color: #fff;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    .quote{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        .heading{
+            h2{
+                font-size: 31px;
+                text-align: center;
+            }
+            
+        }
+        .form{
+            form{
+                width: 515px;
+                margin: auto;
+                text-align: left;
+                padding-top: 42px;
+                div{
+                    margin-bottom: 18px;
+                    label{
+                        width: 100%;
+                        display: block;
+                        font-size: 14px;
+                        color: #b1b1b1;
+                    }
+                    input{
+                        padding: 12px;
+                        margin-top: 10px;
+                        width: 100%;
+                        border: 1px solid #b1b1b1;
+                        border-radius:5px;
+                    }
+                    p.error{
+                        padding: 10px 0;
+                        font-size: 13px;
+                        color: #e53935;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                    p.success{
+                        background: #c8e6c9;
+                        font-size: 14px;
+                        padding: 10px 10px;
+                        margin-top: 10px;
+                        color: #444444;
+                        font-weight: 400;
+                    }
+                }
+                div.button{
+                    text-align: center;
+                    button{
+                        font-size: 19px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        padding: 10px 47px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        @include backgroun-gradient();
+        .footer{
+            .container{
+                display: flex;
+                .footer-content{
+                    width: 20%;
+                    padding: 50px 10px;
+                    padding-right: 0px;
+                    &:last-child{
+                        width: 40%;
+                        p{
+                            color: #fff;
+                            font-weight: 300;
+                            font-size: 18px;
+                        }
+                    }
+                    .heading{
+                        margin-bottom: 23px;
+                        h3{
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            padding-bottom: 10px;
+                            a{
+                                color: #fff;
+                                font-weight: 300;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
